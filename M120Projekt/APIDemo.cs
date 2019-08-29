@@ -12,7 +12,7 @@ namespace M120Projekt
             Debug.Print("--- DemoACreate ---");
             // KlasseA
             Data.Produkt produkt1 = new Data.Produkt();
-            produkt1.ProduktName = "Artikel 13";
+            produkt1.ProduktName = "Artikel 131";
             produkt1.Erscheinungsdatum = DateTime.Today;
             produkt1.AnLager = true;
             produkt1.Preis = 21;
