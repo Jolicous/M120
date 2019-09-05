@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Produkt" Height="450" Width="473.5" WindowStartupLocation="Manual">
+    <StackPanel>
+        <Viewbox Stretch="Fill">
+            <Menu HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" BorderThickness="1,1,1,1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <MenuItem Header="Produkte" Grid.Row="0" Grid.Column="0"/>
+                    <MenuItem Header="Bestellungen" Grid.Row="0" Grid.Column="1"/>
+                    <MenuItem Header="Kontakt" Grid.Row="0" Grid.Column="2"/>
+                </Grid>
+            </Menu>
+        </Viewbox>        
+        <Grid Margin="20,10,164,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Margin="0,0,10,0" Content="Speichern" Background="#FF6DC714"/>
+            <Button Grid.Column="1" Margin="0,0,10,0" Content="Abbrechen"/>
+            <Button Grid.Column="2" Content="Löschen" Background="#FFC52B2B"/>
+        </Grid>
+        <Grid Margin="20,10,30,10" Height="214">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Erscheinungsdatum"/>
+            <DatePicker VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" SelectedDateFormat="Short"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Produkname"/>
+            <TextBox VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Height="23" TextWrapping="Wrap"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Preis"/>
+            <TextBox VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Height="23" TextWrapping="Wrap"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Versandart"/>
+            <ComboBox VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" SelectedIndex="0">
+                <Label Content="A - Post"/>
+                <Label Content="B - Post"/>
+                <Label Content="Abholung"/>
+            </ComboBox>
+            <Label Grid.Row="4" Grid.Column="0" Content="An Lager"/>
+            <CheckBox VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Content=""/>
+        </Grid>        
+    </StackPanel>
 </Window>
