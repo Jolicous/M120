@@ -5,27 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="Produkt" Height="369.5" Width="474.5" WindowStartupLocation="Manual">
+        Title="Produkt" Height="336.5" Width="474.5" WindowStartupLocation="Manual">
     <StackPanel>
         <Viewbox Stretch="Fill">
-            <Menu HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" BorderThickness="1,1,1,1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="25"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="auto"/>
-                    </Grid.ColumnDefinitions>
-                    <MenuItem Header="Produkte" Grid.Row="0" Grid.Column="0" Click="MenuItem_Click"/>
-                    <MenuItem Header="Bestellungen" Grid.Row="0" Grid.Column="1" Click="MenuItem_Click_1"/>
-                    <MenuItem Header="Kontakt" Grid.Row="0" Grid.Column="2" Click="MenuItem_Click_2"/>
-                </Grid>
+            <Menu HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" BorderThickness="1,1,1,1">
+                <MenuItem Header="Produkte" Click="MenuItem_Click" FontSize="9"/>
+                <MenuItem Header="Bestellungen" Click="MenuItem_Click_1" FontSize="9"/>
+                <MenuItem Header="Kontakt" Click="MenuItem_Click_2" FontSize="9"/>
             </Menu>
         </Viewbox>
         <ScrollViewer x:Name="Platzhalter" Width="auto" Height="auto">
-                <local:DetailProdukt HorizontalAlignment="Left" Width="auto"/>
+            <local:DetailProdukt HorizontalAlignment="Left" Width="auto"/>
         </ScrollViewer>
     </StackPanel>
 </Window>
