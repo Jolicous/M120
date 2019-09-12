@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="Produkt" Height="336.5" Width="474.5" WindowStartupLocation="Manual">
+        Title="Produkt" Height="338.5" Width="446.5" WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Viewbox Stretch="Fill">
-            <Menu HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" BorderThickness="1,1,1,1">
-                <MenuItem Header="Produkte" Click="MenuItem_Click" FontSize="9"/>
-                <MenuItem Header="Bestellungen" Click="MenuItem_Click_1" FontSize="9"/>
-                <MenuItem Header="Kontakt" Click="MenuItem_Click_2" FontSize="9"/>
+            <Menu HorizontalAlignment="Left" Height="9" VerticalAlignment="Top">
+                <MenuItem Header="Produkte" Click="MenuItem_Click" FontSize="5"/>
+                <MenuItem Header="Bestellungen" Click="MenuItem_Click_1" FontSize="5"/>
+                <MenuItem Header="Kontakt" Click="MenuItem_Click_2" FontSize="5"/>
             </Menu>
         </Viewbox>
         <ScrollViewer x:Name="Platzhalter" Width="auto" Height="auto">

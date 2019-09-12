@@ -24,5 +24,15 @@ namespace M120Projekt
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Sind Sie sicher, das Sie das Produkt löschen wollen?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Die Änderungen gehen verloren!", "Question", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+        }
     }
 }

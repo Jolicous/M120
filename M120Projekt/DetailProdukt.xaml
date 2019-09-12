@@ -13,8 +13,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Margin="0,0,10,0" Content="Speichern" Background="#FF6DC714"/>
-            <Button Grid.Column="1" Margin="0,0,10,0" Content="Abbrechen"/>
-            <Button Grid.Column="2" Content="Löschen" Background="#FFC52B2B"/>
+            <Button Grid.Column="1" Margin="0,0,10,0" Content="Abbrechen" Click="Button_Click_1"/>
+            <Button Grid.Column="2" Content="Löschen" Background="#FFC52B2B" Click="Button_Click"/>
         </Grid>
         <Grid Margin="20,10,30,10" Height="214">
             <Grid.ColumnDefinitions>
