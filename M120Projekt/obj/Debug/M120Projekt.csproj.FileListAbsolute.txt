@@ -84,4 +84,6 @@ C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\DetailProdukt.g.cs
 C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\DetailProdukt.baml
 C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\Bestellung.g.cs
 C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\Bestellung.baml
+C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\ListeProdukt.g.cs
+C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\ListeProdukt.baml
 C:\Users\vmadmin\Desktop\M120\M120Projekt\obj\Debug\M120Projekt.csprojAssemblyReference.cache

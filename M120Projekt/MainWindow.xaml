@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120Projekt"
         mc:Ignorable="d"
-        Title="Produkt" Height="338.5" Width="446.5" WindowStartupLocation="CenterScreen">
+        Title="Produkt" Height="469.5" Width="424.5" WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Viewbox Stretch="Fill">
             <Menu HorizontalAlignment="Left" Height="9" VerticalAlignment="Top">
@@ -14,8 +14,8 @@
                 <MenuItem Header="Kontakt" Click="MenuItem_Click_2" FontSize="5"/>
             </Menu>
         </Viewbox>
-        <ScrollViewer x:Name="Platzhalter" Width="auto" Height="auto">
-            <local:DetailProdukt HorizontalAlignment="Left" Width="auto"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" x:Name="Platzhalter" Width="auto" Height="auto">
+            <local:Bestellung HorizontalAlignment="Left"/>
         </ScrollViewer>
     </StackPanel>
 </Window>

@@ -21,10 +21,8 @@ namespace M120Projekt
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            DetailProdukt detailProdukt = new DetailProdukt();
-            detailProdukt.HorizontalAlignment = HorizontalAlignment.Left;
-            detailProdukt.Width = double.NaN;
-            Platzhalter.Content = detailProdukt;
+            ListeProdukt listeProdukt = new ListeProdukt();
+            Platzhalter.Content = listeProdukt;
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
