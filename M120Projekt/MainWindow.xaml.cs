@@ -10,13 +10,6 @@ namespace M120Projekt
         public MainWindow()
         {
             InitializeComponent();
-            // Aufruf diverse APIDemo Methoden
-            APIDemo.DemoACreate();
-            APIDemo.DemoACreateKurz();
-            APIDemo.DemoARead();
-            APIDemo.DemoAUpdate();
-            APIDemo.DemoARead();
-            APIDemo.DemoADelete();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

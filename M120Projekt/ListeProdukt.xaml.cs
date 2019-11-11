@@ -23,11 +23,13 @@ namespace M120Projekt
         public ListeProdukt()
         {
             InitializeComponent();
+            DataGridProdukt dataGridProdukt = new DataGridProdukt(Platzhalter);
+            Platzhalter.Content = dataGridProdukt;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DetailProdukt detailProdukt = new DetailProdukt(Platzhalter);
+            DetailProdukt detailProdukt = new DetailProdukt(Platzhalter, true);
             detailProdukt.HorizontalAlignment = HorizontalAlignment.Left;
             detailProdukt.Width = double.NaN;
             Platzhalter.Content = detailProdukt;

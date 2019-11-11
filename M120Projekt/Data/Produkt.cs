@@ -19,17 +19,11 @@ namespace M120Projekt.Data
         public Boolean AnLager { get; set; }
         [Required]
         public Decimal Preis { get; set; }
+        [Required]
+        public string Versandart { get; set; }
         #endregion
+
         #region Applikationsschicht
-        public Produkt() { }
-        [NotMapped]
-        public String BerechnetesAttribut
-        {
-            get
-            {
-                return "Im Getter kann Code eingefügt werden für berechnete Attribute";
-            }
-        }
         public static List<Produkt> LesenAlle()
         {
             using (var db = new Context())

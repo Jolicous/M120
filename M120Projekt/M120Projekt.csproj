@@ -62,8 +62,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="API.cs" />
     <Compile Include="Bestellung.xaml.cs">
       <DependentUpon>Bestellung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridProdukt.xaml.cs">
+      <DependentUpon>DataGridProdukt.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kontakt.xaml.cs">
       <DependentUpon>Kontakt.xaml</DependentUpon>
@@ -72,6 +76,10 @@
       <DependentUpon>DetailProdukt.xaml</DependentUpon>
     </Compile>
     <Page Include="Bestellung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataGridProdukt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

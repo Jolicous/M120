@@ -16,4 +16,5 @@
         <Button Grid.Row="1" Height="auto" Width="auto" Background="Green" Click="Button_Click">Neues Produkt</Button>
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="2" x:Name="Platzhalter" Width="auto" Height="auto"></ScrollViewer>
     </Grid>
+    
 </UserControl>

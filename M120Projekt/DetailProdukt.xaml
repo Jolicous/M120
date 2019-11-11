@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120Projekt"
-             mc:Ignorable="d" Width="649" d:DesignHeight="280">
+             mc:Ignorable="d" Width="417" d:DesignHeight="280">
     <StackPanel>
         <Grid Margin="20,10,164,10">
             <Grid.ColumnDefinitions>
@@ -43,7 +43,7 @@
                 <Label Content="Abholung"/>
             </ComboBox>
             <Label VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Content="An Lager"/>
-            <CheckBox VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Content="" Margin="0,14" Unchecked="CheckBox_Changed" Checked="CheckBox_Changed"/>
+            <CheckBox x:Name="cbxAnLager" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Content="" Margin="0,14" Unchecked="CheckBox_Changed" Checked="CheckBox_Changed"/>
         </Grid>
     </StackPanel>
 </UserControl>
