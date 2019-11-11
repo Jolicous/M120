@@ -7,6 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DataGrid x:Name="dagTabelle" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" MouseDoubleClick="DagTabelle_MouseDoubleClick"/>
+        <DataGrid x:Name="dagTabelle" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" MouseDoubleClick="DagTabelle_MouseDoubleClick" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ProduktName}" Header="Name"/>
+                <DataGridTextColumn Binding="{Binding Erscheinungsdatum, StringFormat='d. MMMM yyy'}" Header="Erscheinungsdatum"/>
+                <DataGridTextColumn Binding="{Binding Preis}" Header="Preis in CHF"/>
+                <DataGridTextColumn Binding="{Binding Versandart}" Header="Versandart"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </UserControl>
